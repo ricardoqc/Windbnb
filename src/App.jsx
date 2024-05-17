@@ -21,6 +21,7 @@ const App = () => {
       return true;
     });
     setProperties(filteredProperties);
+    setIsDrawerOpen(false);
   };
 
   return (
