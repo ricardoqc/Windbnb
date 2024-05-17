@@ -1,0 +1,33 @@
+.card {
+    width: 395px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.card-img {
+    width: 395px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+.card-body {
+
+}
+.card-details {
+
+}
+.super-host {
+
+}
+.property-type {
+
+}
+.property-beds {
+
+}
+.rating {
+
+}
+.card-title {
+
+}
