@@ -29,6 +29,7 @@ const App = () => {
       <Nav onDrawerToggle={() => setIsDrawerOpen(!isDrawerOpen)} />
       {isDrawerOpen && <FilterDrawer onFilter={handleFilter} />}
       <div className="results-summary">
+        <h1>Stays in Finland</h1>
         <span>{properties.length} stays</span>
       </div>
       <div className="cards-container">

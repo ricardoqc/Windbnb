@@ -36,12 +36,6 @@ const FilterDrawer = ({ onFilter }) => {
       <div className="filter-group">
         <label>Guests</label>
         <div className="guests-input">
-          <input
-            type="text"
-            value={`${totalGuests} guests`}
-            readOnly
-            className="total-guests-input"
-          />
           <div className="guests-controls">
             <div>
               <label>Adults</label>
@@ -62,11 +56,17 @@ const FilterDrawer = ({ onFilter }) => {
                 <span>{children}</span>
                 <button onClick={() => setChildren(children + 1)}>+</button>
               </div>
+              <input
+                type="text"
+                value={`${totalGuests} guests`}
+                readOnly
+                className="total-guests-input"
+              />
             </div>
           </div>
         </div>
       </div>
-      <button onClick={handleFilter}>Search</button>
+      <button onClick={handleFilter} className='btn-filter'>Search</button>
     </div>
   );
 };
